@@ -11,20 +11,59 @@ body {
   font-size: 32px;
 }
 
-.container {
+.background {
   height: 100vh;
 }
 
-.container img {
+.background .curve img {
   position: absolute;
-}
-
-.container .curve img {
   bottom: 0;
 }
 
-.container .bg img {
+.background .bg img {
+  position: absolute;
   left: 600px;
   z-index: -1;
+}
+
+.container {
+  padding: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .testimonial {
+  max-width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .testimonial .text {
+  min-width: 400px;
+}
+
+.container .image {
+  right: 300px;
+  top: 25%;
+  z-index: -1;
+}
+
+.container .image .john {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

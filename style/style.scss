@@ -14,16 +14,41 @@ body {
   font-size: 32px;
 }
 
-.container {
+.background {
   height: 100vh;
-  img {
-    position: absolute;
-  }
   .curve img {
+    position: absolute;
     bottom: 0;
   }
   .bg img {
+    position: absolute;
     left: 600px;
     z-index: -1;
+  }
+}
+
+.container {
+  padding: 120px;
+  display: flex;
+  justify-content: center;
+
+  .testimonial {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .text {
+      min-width: 400px;
+    }
+  }
+
+  .image {
+    right: 300px;
+    top: 25%;
+    z-index: -1;
+    .john {
+      display: none;
+    }
   }
 }
