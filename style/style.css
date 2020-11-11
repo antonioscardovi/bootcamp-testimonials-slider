@@ -22,7 +22,8 @@ body {
 
 .background .bg img {
   position: absolute;
-  left: 600px;
+  top: 50px;
+  left: 650px;
   z-index: -1;
 }
 
@@ -48,13 +49,35 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .container .testimonial .text {
-  min-width: 400px;
+  color: #202046;
+  margin-right: -82px;
+  max-width: 650px;
+  font-weight: 300;
+  line-height: 42px;
+}
+
+.container .testimonial .info {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 21px;
+}
+
+.container .testimonial .info .name {
+  margin-right: 10px;
+  font-weight: 700;
+}
+
+.container .testimonial .info .job-title {
+  color: #babacf;
+  font-weight: 300;
 }
 
 .container .image {
@@ -65,5 +88,14 @@ body {
 
 .container .image .john {
   display: none;
+}
+
+.container .button {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.container .button img {
+  padding: 10px;
 }
 /*# sourceMappingURL=style.css.map */

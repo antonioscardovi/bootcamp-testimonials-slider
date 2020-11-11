@@ -22,7 +22,8 @@ body {
   }
   .bg img {
     position: absolute;
-    left: 600px;
+    top: 50px;
+    left: 650px;
     z-index: -1;
   }
 }
@@ -37,9 +38,26 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     .text {
-      min-width: 400px;
+      color: $darkBlue;
+      margin-right: -82px;
+      max-width: 650px;
+      font-weight: 300;
+      line-height: 42px;
+    }
+    .info {
+      margin-top: 32px;
+      display: flex;
+      font-size: 21px;
+      .name {
+        margin-right: 10px;
+        font-weight: 700;
+      }
+      .job-title {
+        color: $grayishBlue;
+        font-weight: 300;
+      }
     }
   }
 
@@ -49,6 +67,14 @@ body {
     z-index: -1;
     .john {
       display: none;
+    }
+  }
+
+  .button {
+    background-color: #f1f1f1;
+    padding: 20px;
+    img {
+      padding: 10px;
     }
   }
 }
