@@ -15,6 +15,12 @@ body {
   height: 100vh;
 }
 
+.background .quotes img {
+  position: absolute;
+  top: 192px;
+  left: 260px;
+}
+
 .background .curve img {
   position: absolute;
   bottom: 0;
@@ -23,7 +29,7 @@ body {
 .background .bg img {
   position: absolute;
   top: 50px;
-  left: 650px;
+  left: 666px;
   z-index: -1;
 }
 
@@ -77,7 +83,7 @@ body {
 
 .container .testimonial .info .job-title {
   color: #babacf;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .container .image {
@@ -91,11 +97,17 @@ body {
 }
 
 .container .button {
-  background-color: #f1f1f1;
-  padding: 20px;
+  position: absolute;
+  -webkit-box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+  border-radius: 42px;
+  margin-top: -42px;
+  margin-left: 42px;
+  background-color: #fdfdfd;
+  padding: 6px;
 }
 
 .container .button img {
-  padding: 10px;
+  margin: 0 15px;
 }
 /*# sourceMappingURL=style.css.map */
