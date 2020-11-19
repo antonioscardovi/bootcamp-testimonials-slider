@@ -20,10 +20,12 @@ body {
     position: absolute;
     top: 192px;
     left: 260px;
+    z-index: -1;
   }
   .curve img {
     position: absolute;
     bottom: 0;
+    z-index: -1;
   }
   .bg img {
     position: absolute;
@@ -37,7 +39,6 @@ body {
   padding: 120px;
   display: flex;
   justify-content: center;
-
   .testimonial {
     max-width: 800px;
     display: flex;
@@ -77,14 +78,19 @@ body {
 
   .button {
     position: absolute;
+    z-index: 333;
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
     border-radius: 42px;
     margin-top: -42px;
     margin-left: 42px;
     background-color: #fdfdfd;
     padding: 6px;
+    display: flex;
     img {
       margin: 0 15px;
+    }
+    .next {
+      cursor: pointer;
     }
   }
 }
