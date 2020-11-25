@@ -39,7 +39,7 @@ body {
   padding: 120px;
   display: flex;
   justify-content: center;
-  .testimonial {
+  .testimonial-1 {
     max-width: 800px;
     display: flex;
     flex-direction: column;
@@ -67,10 +67,42 @@ body {
     }
   }
 
+  .testimonial-2 {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    display: none;
+    .text {
+      color: $darkBlue;
+      margin-right: -82px;
+      max-width: 650px;
+      font-weight: 300;
+      line-height: 42px;
+    }
+    .info {
+      margin-top: 32px;
+      display: flex;
+      font-size: 21px;
+      .name {
+        margin-right: 10px;
+        font-weight: 700;
+      }
+      .job-title {
+        color: $grayishBlue;
+        font-weight: 500;
+      }
+    }
+  }
+
   .image {
     right: 300px;
     top: 25%;
     z-index: -1;
+    .tanya {
+      display: inline;
+    }
     .john {
       display: none;
     }
@@ -78,7 +110,8 @@ body {
 
   .button {
     position: absolute;
-    z-index: 333;
+    bottom: 160px;
+    right: 550px;
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
     border-radius: 42px;
     margin-top: -42px;
@@ -87,10 +120,63 @@ body {
     padding: 6px;
     display: flex;
     img {
-      margin: 0 15px;
-    }
-    .next {
+      margin: 0 20px;
       cursor: pointer;
     }
+    img:hover {
+      filter: hue-rotate(-0.25turn);
+    }
+  }
+}
+
+.fade-in {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
