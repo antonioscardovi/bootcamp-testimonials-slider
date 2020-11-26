@@ -17,18 +17,18 @@ body {
 .background {
   height: 100vh;
   .quotes img {
-    position: absolute;
+    position: fixed;
     top: 192px;
     left: 260px;
     z-index: -1;
   }
   .curve img {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     z-index: -1;
   }
   .bg img {
-    position: absolute;
+    position: fixed;
     top: 50px;
     left: 666px;
     z-index: -1;
@@ -178,5 +178,70 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .background {
+    height: 100vh;
+    .quotes img {
+      max-width: 62px;
+      top: 378px;
+      left: 164px;
+      z-index: -1;
+    }
+    .curve img {
+      max-width: 300px;
+      bottom: 0;
+      z-index: -1;
+    }
+    .bg img {
+      max-width: 334px;
+      top: 20px;
+      left: 24px;
+      z-index: -1;
+    }
+  }
+
+  .container {
+    padding: 50px 28px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    .testimonial-1,
+    .testimonial-2 {
+      align-items: center;
+      .text {
+        margin-top: 88px;
+        font-size: 19px;
+        text-align: center;
+        line-height: 23px;
+        margin-right: 0;
+      }
+      .info {
+        flex-direction: column;
+        text-align: center;
+        font-size: 16px;
+        margin-top: 22px;
+      }
+    }
+    .button {
+      position: absolute;
+      top: 332px;
+      right: 38%;
+      padding: 0;
+      img {
+        width: 11px;
+        margin: 0 13px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .image {
+    text-align: center;
+    img {
+      max-width: 260px;
+    }
   }
 }
