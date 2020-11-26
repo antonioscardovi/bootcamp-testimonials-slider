@@ -204,7 +204,7 @@ body {
   }
 
   .container {
-    padding: 50px 28px;
+    padding: 50px 30px;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -213,9 +213,9 @@ body {
       align-items: center;
       .text {
         margin-top: 88px;
-        font-size: 19px;
+        font-size: 18px;
         text-align: center;
-        line-height: 23px;
+        line-height: 24px;
         margin-right: 0;
       }
       .info {
@@ -233,6 +233,7 @@ body {
       img {
         width: 11px;
         margin: 0 13px;
+        margin-bottom: 3px;
         cursor: pointer;
       }
     }
@@ -242,6 +243,7 @@ body {
     text-align: center;
     img {
       max-width: 260px;
+      border-radius: 5px;
     }
   }
 }
